@@ -8,5 +8,11 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
+# add bookworm sources
+xargs echo -e >/etc/apt/sources.list < sources/bookworm-sources.list
+
+# apt update
+apt update -y
+
 # install base packages
 xargs apt install -y < packages/base_packages
