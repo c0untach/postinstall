@@ -9,4 +9,4 @@ if [ "$EUID" -ne 0 ]
 fi
 
 # install base packages
-xargs apt install -y < base_packages
+xargs apt install -y < packages/base_packages
