@@ -1,1 +1,22 @@
-
+linux-headers-amd64
+xfce4
+libxfce4ui-utils
+thunar xfce4-appfinder
+xfce4-panel
+xfce4-session
+xfce4-session
+xfce4-settings
+xfce4-terminal
+xfconf
+xfdesktop4
+xfwm4
+xfce4-battery-plugin
+network-manager
+network-manager-gnome
+papirus-icon-theme
+tmux
+neovim
+git
+curl
+unzip
+xdotool
