@@ -25,6 +25,9 @@ xargs apt install -y < packages/base_packages
 # install virtualbox packages
 xargs apt install -y < packages/virtualbox_packages
 
+# install clamav packages
+xargs apt install -y < packages/clamav_packages
+
 # configure virtualbox
 source scripts/virtualbox_install.sh
 
