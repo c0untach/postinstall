@@ -8,8 +8,14 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
+# add virtulabox gpg
+curl -fsSL https://www.virtualbox.org/download/oracle_vbox_2016.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/vbox.gpg
+
 # add bookworm sources
 xargs echo -e >/etc/apt/sources.list < sources/bookworm-sources.list
+
+# add virtualbox sources
+xargs echo -e >/etc/apt/sources.list.d/virtualbox.list < sources/virtualbox-sources.list
 
 # apt update
 apt update -y
