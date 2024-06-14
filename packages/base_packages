@@ -1,7 +1,8 @@
 linux-headers-amd64
+thunar 
 xfce4
 libxfce4ui-utils
-thunar xfce4-appfinder
+xfce4-appfinder
 xfce4-panel
 xfce4-session
 xfce4-session
@@ -20,3 +21,4 @@ git
 curl
 unzip
 xdotool
+gnome-disk-utility
