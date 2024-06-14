@@ -1,3 +1,7 @@
+curl
+wget
+gnupg2
+lsb-release
 linux-headers-amd64
 thunar 
 xfce4
@@ -18,7 +22,6 @@ papirus-icon-theme
 tmux
 neovim
 git
-curl
 unzip
 xdotool
 gnome-disk-utility
