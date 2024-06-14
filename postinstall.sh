@@ -25,4 +25,4 @@ xargs apt install -y < packages/base_packages
 # install virtualbox packages
 xargs apt install -y < packages/virtualbox_packages
 
-source /scripts/virtualbox_install.sh
+source scripts/virtualbox_install.sh
