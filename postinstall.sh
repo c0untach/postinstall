@@ -28,6 +28,9 @@ xargs apt install -y < packages/virtualbox_packages
 # install clamav packages
 xargs apt install -y < packages/clamav_packages
 
+# install hardening packages
+xargs apt install -y < packages/hardening_packages
+
 # configure virtualbox
 source scripts/virtualbox_install.sh
 
