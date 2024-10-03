@@ -31,7 +31,7 @@ xargs apt install -y < packages/clamav_packages
 # install hardening packages
 xargs apt install -y < packages/hardening_packages
 wget https://www.debian.org/security/oval/oval-definitions-$(lsb_release -cs).xml.bz2
-bzip2 -d oval-definitions-bookworm.xml.bz
+bzip2 -d oval-definitions-bookworm.xml.bz2
 
 # configure virtualbox
 source scripts/virtualbox_install.sh
