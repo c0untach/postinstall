@@ -9,7 +9,7 @@ if [ "$EUID" -ne 0 ]
 fi
 
 # add sources
-xargs echo -e >/etc/apt/sources.list < sources/bookworm-sources.list
+cat sources/bookworm-sources.list >> /etc/apt/sources.list
 
 # add virtualbox gpg and sources
 curl -fsSL https://www.virtualbox.org/download/oracle_vbox_2016.asc| gpg --dearmor -o /etc/apt/trusted.gpg.d/vbox.gpg
