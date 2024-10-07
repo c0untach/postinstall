@@ -11,10 +11,6 @@ fi
 # add sources
 cat sources/bookworm-sources.list >> /etc/apt/sources.list
 
-# add virtualbox gpg and sources
-curl -fsSL https://www.virtualbox.org/download/oracle_vbox_2016.asc| gpg --dearmor -o /etc/apt/trusted.gpg.d/vbox.gpg
-curl -fsSL https://www.virtualbox.org/download/oracle_vbox.asc| gpg --dearmor -o /etc/apt/trusted.gpg.d/oracle_vbox.gpg
-
 # apt update
 apt update -y
 
