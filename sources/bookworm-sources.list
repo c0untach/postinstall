@@ -7,4 +7,4 @@ deb http://security.debian.org/debian-security bookworm-security main contrib no
 deb http://www.nic.funet.fi/debian/ bookworm-updates main contrib non-free non-free-firmware
 #deb-src http://www.nic.funet.fi/debian/ bookworm-updates contrib non-free main non-free-firmware
 
-deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian bookworm contrib
+deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian bookworm contrib
