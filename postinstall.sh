@@ -8,11 +8,11 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-# add gpg keys
-wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg --dearmor
-
 # add sources
 cat sources/bookworm-sources.list > /etc/apt/sources.list
+
+# add gpg keys
+wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg --dearmor
 
 # apt update
 apt update -y && apt full-upgrade -y
